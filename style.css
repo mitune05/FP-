@@ -184,25 +184,26 @@ footer {
     border-collapse: collapse;
     margin-top: 20px;
     font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #d0f0fd; /* 淡い水色の背景 */
+    border-radius: 8px; /* 角を少し丸める */
 }
 
 .staff-table th, .staff-table td {
-    border: 1px solid #aaa;
+    border: 1px solid #0077b6; /* 枠線をヘッダーと同系色に */
     padding: 10px 12px;
     text-align: left;
     vertical-align: top;
 }
 
 .staff-table th {
-    background-color: #0077b6; /* ヘッダーの色 */
+    background-color: #0077b6; /* ヘッダーの青 */
     color: #fff;
     font-weight: bold;
     text-decoration: underline;
 }
 
 .staff-table tr:nth-child(even) {
-    background-color: rgba(0, 119, 182, 0.1);
+    background-color: #e0f7ff; /* 交互行を淡い青 */
 }
 
 .staff-img {
