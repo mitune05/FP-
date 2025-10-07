@@ -1,10 +1,10 @@
 /* ==============================
    基本設定
-============================== */
+============================= */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', 'メイリオ', sans-serif;
     background: linear-gradient(to bottom right, #a0e7ff, #00b4d8); /* 水色グラデ */
-    color: #e0f7fa; /* ホーム見出しと同じ文字色 */
+    color: #e0f7fa; /* 全体文字色 */
     margin: 0;
     padding: 0 20px;
     line-height: 1.6;
@@ -12,7 +12,7 @@ body {
 
 /* ==============================
    ナビゲーション
-============================== */
+============================= */
 header {
     text-align: center;
     padding: 15px 0;
@@ -22,7 +22,7 @@ header {
 header a {
     display: inline-block;
     background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(200,230,255,0.35));
-    color: #e0f7fa;
+    color: #c0f2ff !important; /* h1-mainと同じ色 */
     text-decoration: none;
     margin: 0 12px;
     padding: 10px 22px;
@@ -31,26 +31,39 @@ header a {
     border-radius: 8px;
     transition: all 0.3s ease;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-
-    /* 軽い立体感 */
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 
 header a:hover {
     background: linear-gradient(135deg, rgba(255,255,255,0.55), rgba(200,230,255,0.55));
-    color: #ffffff;
+    color: #ffffff !important;
     box-shadow: 0 6px 12px rgba(0,0,0,0.4);
-    transform: translateY(-2px); /* ホバーで少し浮く */
+    transform: translateY(-2px);
 }
 
 /* ==============================
    見出し
-============================== */
+============================= */
 h1 {
     text-align: center;
     font-size: 2.5em;
     text-shadow: 2px 2px rgba(0,0,0,0.4);
     margin: 20px 0;
+    color: #c0f2ff;
+}
+
+.h1-main {
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0,0,0,0.4);
+    color: #c0f2ff;
+}
+
+.h1-sm {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    color: #a0e7ff;
 }
 
 h2 {
@@ -62,7 +75,7 @@ h2 {
 
 /* ==============================
    コンテンツ
-============================== */
+============================= */
 .content {
     background: rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -74,9 +87,29 @@ h2 {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
 
+.content p,
+.content ol,
+.content li {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e0f7fa;
+    line-height: 1.6;
+}
+
+/* 文章中リンク */
+.content a {
+    color: #007acc !important; /* Discordリンクなど濃い水色 */
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline !important;
+}
+
 /* ==============================
    テーブル
-============================== */
+============================= */
 .table-style {
     width: 100%;
     border-collapse: collapse;
@@ -95,7 +128,7 @@ h2 {
 
 /* ==============================
    運営ページ
-============================== */
+============================= */
 .staff-member {
     display: flex;
     align-items: center;
@@ -122,8 +155,8 @@ h2 {
 }
 
 /* ==============================
-   フッター画像（締めスクショ）
-============================== */
+   フッター画像
+============================= */
 footer {
     margin-top: 50px;
     width: 100%;
@@ -137,15 +170,11 @@ footer {
     height: auto;
     display: block;
     margin: 40px auto 0 auto;
-
     border-radius: 12px;
-
-    /* 水色系グラデ枠線 */
     border: 3px solid;
     border-image-slice: 1;
     border-width: 3px;
     border-image-source: linear-gradient(45deg, #80e5ff, #00b4d8);
-
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -156,8 +185,8 @@ footer {
 }
 
 /* ==============================
-   リストや段落の調整
-============================== */
+   リストや段落
+============================= */
 ol, ul {
     max-width: 800px;
     margin: 20px auto;
@@ -171,7 +200,7 @@ p {
 
 /* ==============================
    レスポンシブ対応
-============================== */
+============================= */
 @media (max-width: 768px) {
     .content {
         padding: 25px;
@@ -192,78 +221,4 @@ p {
         margin: 30px auto 0 auto;
     }
 }
-
-/* 全ページ文字色の強制設定 */
-body, h1, h2, h3, h4, h5, h6, p, li, span {
-    color: #e0f7fa !important;  /* 薄い水色に統一 */
-}
-
-a {
-    color: #007acc !important;  /* リンクは濃い水色で目立たせる */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline !important;
-}
-
-header a {
-    /* 元のスタイルをそのまま維持 */
-}
-
-
-/* ==============================
-   見出しサイズ調整
-============================== */
-.h1-main {
-    font-size: 2.5em;
-    text-align: center;
-    text-shadow: 2px 2px rgba(0,0,0,0.4);
-    color: #c0f2ff;
-}
-
-.h1-sm {
-    font-size: 2em;
-    text-align: center;
-    text-shadow: 1px 1px rgba(0,0,0,0.3);
-    color: #a0e7ff;
-}
-
-
-/* ==============================
-   コンテンツ内文章中央寄せ
-============================== */
-.content p,
-.content ol,
-.content li {
-    text-align: center;   /* 中央揃えにする */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* header内のリンクを見出しと同じ色にする */
-header a {
-    color: #c0f2ff;  /* h1-mainと同じ色 */
-}
-
-/* ナビゲーションリンク */
-header a {
-    color: #c0f2ff;  /* 見出しと同じ色 */
-}
-
-header a:hover {
-    color: #ffffff;   /* ホバー時の色は好みで */
-}
-
-/* 文章中のリンク */
-.content a {
-    color: #007acc;   /* Discordリンクなどは濃い水色に */
-    text-decoration: none;
-}
-.content a:hover {
-    text-decoration: underline;
-}
-
-
-
 
