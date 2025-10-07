@@ -246,6 +246,24 @@ header a {
     color: #c0f2ff;  /* h1-mainと同じ色 */
 }
 
+/* ナビゲーションリンク */
+header a {
+    color: #c0f2ff;  /* 見出しと同じ色 */
+}
+
+header a:hover {
+    color: #ffffff;   /* ホバー時の色は好みで */
+}
+
+/* 文章中のリンク */
+.content a {
+    color: #007acc;   /* Discordリンクなどは濃い水色に */
+    text-decoration: none;
+}
+.content a:hover {
+    text-decoration: underline;
+}
+
 
 
 
