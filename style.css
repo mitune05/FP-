@@ -241,6 +241,11 @@ header a {
     margin-right: auto;
 }
 
+/* header内のリンクを見出しと同じ色にする */
+header a {
+    color: #c0f2ff;  /* h1-mainと同じ色 */
+}
+
 
 
 
