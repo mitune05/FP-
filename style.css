@@ -2,7 +2,7 @@
    基本設定
 ============================= */
 body {
-    font-family: 'Arial', 'メイリオ', sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(to bottom right, #a0e7ff, #00b4d8); /* 水色グラデ */
     color: #e0f7fa; /* 全体文字色 */
     margin: 0;
@@ -22,7 +22,7 @@ header {
 header a {
     display: inline-block;
     background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(200,230,255,0.35));
-    color: #c0f2ff !important; /* h1-mainと同じ色 */
+    color: #c0f2ff !important; /* h1-mainと同じ色に統一 */
     text-decoration: none;
     margin: 0 12px;
     padding: 10px 22px;
@@ -49,21 +49,6 @@ h1 {
     font-size: 2.5em;
     text-shadow: 2px 2px rgba(0,0,0,0.4);
     margin: 20px 0;
-    color: #c0f2ff;
-}
-
-.h1-main {
-    font-size: 2.5em;
-    text-align: center;
-    text-shadow: 2px 2px rgba(0,0,0,0.4);
-    color: #c0f2ff;
-}
-
-.h1-sm {
-    font-size: 2em;
-    text-align: center;
-    text-shadow: 1px 1px rgba(0,0,0,0.3);
-    color: #a0e7ff;
 }
 
 h2 {
@@ -87,105 +72,8 @@ h2 {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
 
-.content p,
-.content ol,
-.content li {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: #e0f7fa;
-    line-height: 1.6;
-}
-
-/* 文章中リンク */
-.content a {
-    color: #007acc !important; /* Discordリンクなど濃い水色 */
-    text-decoration: none;
-}
-
-.content a:hover {
-    text-decoration: underline !important;
-}
-
 /* ==============================
-   テーブル
-============================= */
-.table-style {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-.table-style th, .table-style td {
-    border: 2px solid rgba(255,255,255,0.5);
-    padding: 10px;
-    text-align: left;
-}
-
-.table-style th {
-    background-color: rgba(255,255,255,0.2);
-}
-
-/* ==============================
-   運営ページ
-============================= */
-.staff-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-
-.staff-member img {
-    width: 64px;
-    height: 64px;
-    margin-right: 20px;
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 5px;
-}
-
-.staff-info h3 {
-    margin: 0 0 5px 0;
-}
-
-.staff-info p {
-    margin: 0;
-}
-
-/* ==============================
-   フッター画像
-============================= */
-footer {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-.footer-bg {
-    width: 90%;
-    max-width: 1200px;
-    height: auto;
-    display: block;
-    margin: 40px auto 0 auto;
-    border-radius: 12px;
-    border: 3px solid;
-    border-image-slice: 1;
-    border-width: 3px;
-    border-image-source: linear-gradient(45deg, #80e5ff, #00b4d8);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.footer-bg:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 25px rgba(0,0,0,0.6);
-}
-
-/* ==============================
-   リストや段落
+   リストや段落の調整
 ============================= */
 ol, ul {
     max-width: 800px;
@@ -222,3 +110,82 @@ p {
     }
 }
 
+/* ==============================
+   全ページ文字色強制設定
+============================= */
+body, h1, h2, h3, h4, h5, h6, p, li, span {
+    color: #e0f7fa !important;  /* 薄い水色に統一 */
+}
+
+/* ==============================
+   見出しサイズ調整
+============================= */
+.h1-main {
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0,0,0,0.4);
+    color: #c0f2ff; /* ナビリンクと統一 */
+}
+
+.h1-sm {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    color: #a0e7ff;
+}
+
+/* ==============================
+   キーワードハイライト
+============================= */
+.highlight1 { color: #80e5ff; font-weight: bold; }
+.highlight2 { color: #48dbfb; font-weight: bold; }
+.highlight3 { color: #00b4d8; font-weight: bold; }
+.highlight4 { color: #1dd1a1; font-weight: bold; }
+.highlight5 { color: #00d2d3; font-weight: bold; }
+.highlight6 { color: #00b4d8; font-weight: bold; }
+.highlight7 { color: #80e5ff; font-weight: bold; }
+
+/* ==============================
+   コンテンツ内文章中央寄せ
+============================= */
+.content p,
+.content ol,
+.content li {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==============================
+   文章内リンク
+============================= */
+.content a {
+    color: #007acc;   /* Discordリンクなどは濃い水色 */
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   フッター画像
+============================= */
+.footer-bg {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 40px auto 0 auto;
+    border-radius: 12px;
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #80e5ff, #00b4d8);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-bg:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+}
