@@ -207,6 +207,11 @@ a:hover {
     text-decoration: underline !important;
 }
 
+header a {
+    /* 元のスタイルをそのまま維持 */
+}
+
+
 /* ==============================
    見出しサイズ調整
 ============================== */
@@ -251,5 +256,6 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
