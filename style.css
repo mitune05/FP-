@@ -229,22 +229,6 @@ header a {
     color: #a0e7ff;
 }
 
-/* ==============================
-   キーワードハイライト
-============================== */
-.highlight1 { color: #80e5ff; font-weight: bold; }
-.highlight2 { color: #48dbfb; font-weight: bold; }
-.highlight3 { color: #00b4d8; font-weight: bold; }
-.highlight4 { color: #1dd1a1; font-weight: bold; }
-.highlight5 { color: #00d2d3; font-weight: bold; }
-.highlight6 { color: #00b4d8; font-weight: bold; }
-.highlight7 { color: #80e5ff; font-weight: bold; }
-
-/* 全体の文章色を薄水色に統一 */
-.content p, ol, li {
-    color: #e0f7fa;
-    line-height: 1.6;
-}
 
 /* ==============================
    コンテンツ内文章中央寄せ
@@ -256,6 +240,7 @@ header a {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
 
