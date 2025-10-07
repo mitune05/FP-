@@ -194,7 +194,7 @@ p {
 }
 
 /* 全ページ文字色の強制設定 */
-body, h1, h2, h3, h4, h5, h6, p, li, a, span {
+body, h1, h2, h3, h4, h5, h6, p, li, span {
     color: #e0f7fa !important;  /* 薄い水色に統一 */
 }
 
@@ -251,4 +251,5 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
 
