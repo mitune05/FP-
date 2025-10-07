@@ -207,3 +207,37 @@ a:hover {
     text-decoration: underline !important;
 }
 
+/* ==============================
+   見出しサイズ調整
+============================== */
+.h1-main {
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0,0,0,0.4);
+    color: #c0f2ff;
+}
+
+.h1-sm {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    color: #a0e7ff;
+}
+
+/* ==============================
+   キーワードハイライト
+============================== */
+.highlight1 { color: #80e5ff; font-weight: bold; }
+.highlight2 { color: #48dbfb; font-weight: bold; }
+.highlight3 { color: #00b4d8; font-weight: bold; }
+.highlight4 { color: #1dd1a1; font-weight: bold; }
+.highlight5 { color: #00d2d3; font-weight: bold; }
+.highlight6 { color: #00b4d8; font-weight: bold; }
+.highlight7 { color: #80e5ff; font-weight: bold; }
+
+/* 全体の文章色を薄水色に統一 */
+.content p, ol, li {
+    color: #e0f7fa;
+    line-height: 1.6;
+}
+
