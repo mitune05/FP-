@@ -178,3 +178,43 @@ footer {
 .highlight5 { color: #00d2d3; font-weight: bold; }
 .highlight6 { color: #00b4d8; font-weight: bold; }
 .highlight7 { color: #80e5ff; font-weight: bold; }
+
+.staff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.staff-table th, .staff-table td {
+    border: 1px solid #aaa;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.staff-table th {
+    background-color: #0077b6;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline; /* 下線を引く */
+}
+
+.staff-table tr:nth-child(even) {
+    background-color: rgba(0, 119, 182, 0.1);
+}
+
+.staff-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.staff-table td strong {
+    font-weight: 600; /* 少し太め */
+    display: block;    /* 改行されるようにブロック表示 */
+}
+
+
