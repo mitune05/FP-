@@ -220,20 +220,19 @@ p, li {
 }
 
 /* ==============================
-   説明文・本文の文字色を元に戻す
+   水色系グラデーション風の文字強調
 ============================== */
-body, .content p, li {
-    color: #e0f7fa; /* 元の薄い水色文字 */
+.text-highlight1 { color: #c0f2ff; font-weight: bold; }
+.text-highlight2 { color: #80e5ff; font-weight: bold; }
+.text-highlight3 { color: #a0e7ff; font-weight: bold; }
+.text-highlight4 { color: #48dbfb; font-weight: bold; }
+.text-highlight5 { color: #5fdbd3; font-weight: bold; }
+.text-highlight6 { color: #1dd1a1; font-weight: bold; }
+.text-highlight7 { color: #00b4d8; font-weight: bold; }
+
+/* 全体の文章も読みやすい薄水色に統一 */
+.content p {
+    color: #e0f7fa;
+    line-height: 1.6;
 }
 
-/* キーワードの強調も元のデザインに合わせる */
-.text-bold1,
-.text-special1,
-.text-special2,
-.text-special3,
-.text-special4,
-.text-special5,
-.text-special6 {
-    color: #e0f7fa; /* 元の文字色に統一 */
-    font-weight: bold; /* 強調は残す */
-}
