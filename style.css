@@ -193,28 +193,3 @@ p {
     }
 }
 
-/* ==============================
-   文字の見やすさ改善（修正版）
-============================== */
-body {
-    color: #e0f7fa; /* 元の薄い水色文字に戻す */
-    font-family: 'Arial', 'メイリオ', sans-serif;
-    line-height: 1.8;
-}
-
-h1, h2 {
-    color: #e0f7fa; /* 見出しも水色系に戻す */
-}
-
-a {
-    color: #007acc; /* リンクはそのまま目立たせる */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-p, li {
-    font-size: 1.15em;
-}
