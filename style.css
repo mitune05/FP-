@@ -219,20 +219,3 @@ p, li {
     font-size: 1.15em; /* 段落・リストを少し大きくして読みやすく */
 }
 
-/* ==============================
-   水色系グラデーション風の文字強調
-============================== */
-.text-highlight1 { color: #c0f2ff; font-weight: bold; }
-.text-highlight2 { color: #80e5ff; font-weight: bold; }
-.text-highlight3 { color: #a0e7ff; font-weight: bold; }
-.text-highlight4 { color: #48dbfb; font-weight: bold; }
-.text-highlight5 { color: #5fdbd3; font-weight: bold; }
-.text-highlight6 { color: #1dd1a1; font-weight: bold; }
-.text-highlight7 { color: #00b4d8; font-weight: bold; }
-
-/* 全体の文章も読みやすい薄水色に統一 */
-.content p {
-    color: #e0f7fa;
-    line-height: 1.6;
-}
-
