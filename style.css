@@ -219,3 +219,21 @@ p, li {
     font-size: 1.15em; /* 段落・リストを少し大きくして読みやすく */
 }
 
+/* ==============================
+   説明文の色付け
+============================== */
+.text-bold1 { color: #ff6b6b; font-weight: bold; }
+.text-special1 { color: #48dbfb; font-weight: bold; }
+.text-special2 { color: #feca57; font-weight: bold; }
+.text-special3 { color: #ff9ff3; font-weight: bold; }
+.text-special4 { color: #1dd1a1; font-weight: bold; }
+.text-special5 { color: #5f27cd; font-weight: bold; }
+.text-special6 { color: #ff9f43; font-weight: bold; }
+
+/* 文章全体に淡いグラデーション風を追加したい場合の例 */
+.content p {
+    background: linear-gradient(to right, #ffffff, #e0f7fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
