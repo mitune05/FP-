@@ -193,3 +193,17 @@ p {
     }
 }
 
+/* 全ページ文字色の強制設定 */
+body, h1, h2, h3, h4, h5, h6, p, li, a, span {
+    color: #e0f7fa !important;  /* 薄い水色に統一 */
+}
+
+a {
+    color: #007acc !important;  /* リンクは濃い水色で目立たせる */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
