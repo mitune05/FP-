@@ -241,3 +241,12 @@ a:hover {
     line-height: 1.6;
 }
 
+/* ==============================
+   コンテンツ内文章中央寄せ
+============================== */
+.content p,
+.content ol,
+.content li {
+    text-align: center;
+}
+
